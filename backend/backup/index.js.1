@@ -1,0 +1,73 @@
+import express from 'express'
+import cors from 'cors'
+import morgan from 'morgan'
+import axios from 'axios'
+import puppeteer from 'puppeteer'
+
+const app = express()
+app.use(morgan('tiny'))
+app.use(cors())
+app.use(express.json())
+
+app.get('/api/hello', (req, res) => {
+  res.json({ message: 'Hello World' })
+})
+
+app.post('/api/screen', async (request, response, next) => {
+  const { url } = request.body
+  try {
+    // Check if URL is valid by making a HEAD request
+    console.log(0)
+    const options = {
+      method: 'HEAD',
+    }
+    console.log(1)
+
+    const res = await fetch(url, options)
+    console.log(2)
+
+    if (!res.ok) {
+      const error = new Error('Invalid URL')
+      error.statusCode = 400
+      throw error
+    }
+    console.log(3)
+
+    const browser = await puppeteer.launch()
+    console.log(4)
+    const page = await browser.newPage()
+    await page.goto(url)
+    console.log(5)
+
+    // Take a screenshot
+    const screenshot = await page.screenshot({ type: 'jpeg' })
+    console.log(6)
+
+    // Convert the screenshot to base64
+    const base64Image = screenshot.toString('base64')
+    console.log(7)
+
+    // Send the data to the client via JSON
+    response.json({ image: base64Image })
+    console.log(8)
+
+    await browser.close()
+    console.log(9)
+
+  } catch (error) {
+    next(error) // Pass error to the error handler middleware
+  }
+})
+
+app.use((err, req, res, next) => {
+  return res.status(500).json({
+    success: false,
+    statusCode: 500,
+    message: 'Internal Server Error'
+  })
+})
+
+const PORT = process.env.PORT || 3001
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`)
+})
