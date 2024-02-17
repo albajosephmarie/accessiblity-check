@@ -60,3 +60,68 @@
   gap: var(--spacing-xl, 16px);
   flex: 1 0 0;
 }
+
+.Logomark {
+  display: flex;
+  align-items: flex-start;
+
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 1px 3px 0px rgba(16, 24, 40, 0.10);
+}
+
+.LogomarkVector {
+  width: 32px;
+  height: 32px;
+
+  background: url("./assets/Logomark.png") lightgray 50% / cover no-repeat;
+}
+
+.TextAndSupportingText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-xs, 4px);
+  flex: 1 0 0;
+}
+
+.Text {
+  align-self: stretch;
+
+  color: var(--colors-text-text-primary-900, #101828);
+
+  /* Text xl/Semibold */
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.875rem;
+  /* 150% */
+}
+
+.SupportingText {
+  align-self: stretch;
+
+  color: var(--colors-text-text-tertiary-600, #475467);
+
+  /* Text sm/Regular */
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+  /* 142.857% */
+}
+
+.ButtonClose {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: var(--spacing-md, 8px);
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  right: 16px;
+  top: 12px;
+
+  border-radius: var(--radius-md, 8px);
+}
