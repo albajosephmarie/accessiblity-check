@@ -125,3 +125,72 @@
 
   border-radius: var(--radius-md, 8px);
 }
+
+.InputField {
+  display: flex;
+  padding: 0px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-sm, 6px);
+  align-self: stretch;
+}
+
+.InputFieldWithLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-sm, 6px);
+  align-self: stretch;
+}
+
+.Input {
+  display: flex;
+  padding: 10px 14px;
+  align-items: center;
+  gap: var(--spacing-md, 8px);
+  align-self: stretch;
+
+  border-radius: var(--radius-md, 8px);
+  border: 1px solid var(--Colors-Border-border-primary, #D0D5DD);
+  background: var(--Colors-Background-bg-primary, #FFF);
+
+  /* Shadows/shadow-xs */
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.InputContent {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md, 8px);
+  flex: 1 0 0;
+}
+
+.PanelContent {
+  display: flex;
+  padding: var(--spacing-none, 0px) var(--spacing-3xl, 24px);
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-3xl, 24px);
+  flex: 1 0 0;
+  align-self: stretch;
+  border: 1px solid black;
+}
+
+.Footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+
+  border-top: 1px solid var(--Colors-Border-border-secondary, #EAECF0);
+}
+
+.FooterContent {
+  display: flex;
+    padding: var(--spacing-xl, 16px) var(--spacing-3xl, 24px);
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--spacing-xl, 16px);
+    align-self: stretch;
+
+}

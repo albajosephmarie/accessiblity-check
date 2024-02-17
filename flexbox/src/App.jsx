@@ -28,8 +28,27 @@ const App = () => {
                 <img src={xclose} alt="X-close" />
               </button>
             </div>
+          </div>
+          <div className="InputField">
+            <div className="InputFieldWithLabel">
+              <div className="Input">
+                <div className="InputContent">
+                  www.cnn.com
+                </div>
+                <div className="HelpIcon">
 
+                </div>
 
+              </div>
+            </div>
+          </div>
+          <div className="PanelContent">
+
+          </div>
+          <div className="Footer">
+            <div className="FooterContent">
+              
+            </div>
           </div>
 
 
