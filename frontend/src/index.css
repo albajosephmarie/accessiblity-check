@@ -1,0 +1,328 @@
+.UrlReport {
+  display: flex;
+  width: 1512px;
+  height: 982px;
+  align-items: flex-start;
+  gap: 10px;
+
+  /* background: #FFF; */
+  background: green;
+}
+
+.UrlReport .Image {
+  height: 4302px;
+  flex: 1 0 0;
+}
+
+.UrlReport .SlideOutMenu {
+  display: flex;
+  width: 440px;
+  padding-left: var(--spacing-5xl, 40px);
+  align-items: flex-start;
+  flex-shrink: 0;
+  align-self: stretch;
+
+  background: red;
+}
+
+.UrlReport .Panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-3xl, 24px);
+  flex: 1 0 0;
+  align-self: stretch;
+
+  border-left: 1px solid var(--Colors-Border-border-secondary, #EAECF0);
+  background: var(--Colors-Background-bg-primary, #FFF);
+
+  /* Shadows/shadow-xl */
+  box-shadow: 0px 8px 8px -4px rgba(16, 24, 40, 0.03), 0px 20px 24px -4px rgba(16, 24, 40, 0.08);
+}
+
+.UrlReport header {
+  display: flex;
+  padding: 0px var(--spacing-3xl, 24px);
+  align-items: flex-start;
+  gap: var(--spacing-md, 8px);
+  align-self: stretch;
+}
+
+.UrlReport header .Content {
+  display: flex;
+  padding-top: var(--spacing-3xl, 24px);
+  align-items: flex-start;
+  gap: var(--spacing-xl, 16px);
+  flex: 1 0 0;
+  background: pink;
+}
+
+.UrlReport .Logomark {
+  display: flex;
+  align-items: flex-start;
+
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 1px 3px 0px rgba(16, 24, 40, 0.10);
+
+  background-color: aqua;
+}
+
+.Logomark .Vector {
+  width: 32px;
+  height: 32px;
+
+  background: url("./assets/Logomark.png") lightgray 50% / cover no-repeat;
+
+}
+
+.TextAndSupportingText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-xs, 4px);
+  flex: 1 0 0;
+
+  background-color: blueviolet
+}
+
+.TextAndSupportingText .Text {
+  align-self: stretch;
+  color: var(--colors-text-text-primary-900, #101828);
+
+  /* Text xl/Semibold */
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.875rem;
+  /* 150% */
+}
+
+.TextAndSupportingText .SupportingText {
+  align-self: stretch;
+
+  color: var(--colors-text-text-tertiary-600, #475467);
+
+  /* Text sm/Regular */
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+  /* 142.857% */
+}
+
+.UrlReport .ButtonClose {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: var(--spacing-md, 8px);
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  right: 16px;
+  top: 12px;
+  border-radius: var(--radius-md, 8px);
+}
+
+.UrlReport .InputField {
+  display: flex;
+  padding: 0px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-sm, 6px);
+  align-self: stretch;
+}
+
+.InputField .InputWithLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-sm, 6px);
+  align-self: stretch;
+}
+
+.InputField .Input {
+  display: flex;
+  padding: 10px 14px;
+  align-items: center;
+  gap: var(--spacing-md, 8px);
+  align-self: stretch;
+
+  border-radius: var(--radius-md, 8px);
+  border: 1px solid var(--Colors-Border-border-primary, #D0D5DD);
+  background: var(--Colors-Background-bg-primary, #FFF);
+
+  /* Shadows/shadow-xs */
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.InputField .InputContext {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md, 8px);
+  flex: 1 0 0;
+}
+
+.InputField .InputText {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  flex: 1 0 0;
+
+  overflow: hidden;
+  color: var(--Colors-Text-text-placeholder, #667085);
+  text-overflow: ellipsis;
+
+  /* Text md/Regular */
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  /* 150% */
+}
+
+.InputField .HelpIcon {
+  display: flex;
+  padding: 10px 14px;
+  align-items: center;
+  gap: var(--spacing-md, 8px);
+  align-self: stretch;
+
+  border-radius: var(--radius-md, 8px);
+  border: 1px solid var(--Colors-Border-border-primary, #D0D5DD);
+  background: var(--Colors-Background-bg-primary, #FFF);
+
+  /* Shadows/shadow-xs */
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.InputField .Hint {
+  display: flex;
+  padding: 0px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-sm, 6px);
+  align-self: stretch;
+}
+
+.UrlReport .PanelContent {
+  display: flex;
+  padding: var(--spacing-none, 0px) var(--spacing-3xl, 24px);
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-3xl, 24px);
+  flex: 1 0 0;
+  align-self: stretch;
+
+  background-color: burlywood;
+}
+
+.UrlReport .Section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-xl, 16px);
+  align-self: stretch;
+}
+
+.SectionTextAndSupportingText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-xs, 4px);
+  align-self: stretch;
+}
+
+.SectionText {
+  align-self: stretch;
+  color: var(--colors-text-text-secondary-700, #344054);
+
+  /* Text sm/Medium */
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem;
+  /* 142.857% */
+}
+
+.SectionSupportingText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-xs, 4px);
+  align-self: stretch;
+}
+
+.ReportFrame {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+
+
+}
+
+.ReportFrame .AvatarWrap {
+  display: flex;
+  height: 124px;
+  padding-bottom: var(--spacing-xs, 4px);
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs, 4px);
+
+}
+
+.ReportFrame .Content {
+  display: flex;
+  padding-bottom: var(--spacing-4xl, 32px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-lg, 12px);
+  flex: 1 0 0;
+
+}
+
+.ReportFrame .Avatar {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+
+  border-radius: var(--radius-full, 9999px);
+  background: var(--Component-colors-Components-Avatars-avatar-bg, #F2F4F7);
+
+
+}
+
+.ReportFrame .ContrastBorder {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: var(--radius-full, 9999px);
+  border: 0.5px solid var(--Component-colors-Components-Avatars-avatar-contrast-border, rgba(0, 0, 0, 0.08));
+}
+
+.ReportFrame .AvatarText {
+  width: 32px;
+  color: var(--colors-foreground-fg-quaternary-500, #667085);
+  text-align: center;
+
+  /* Text sm/Semibold */
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.8rem;
+  /* 142.857% */
+
+}
+
+.ReportFrame .Connector {
+  width: 2px;
+  flex: 1 0 0;
+
+  border-radius: var(--spacing-xxs, 2px);
+  background: var(--Colors-Border-border-secondary, #EAECF0);
+}
