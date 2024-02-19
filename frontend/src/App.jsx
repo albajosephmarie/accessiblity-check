@@ -24,7 +24,7 @@ const App = () => {
       {(stage === 'url_entry')
       ? <UrlWebsite />
       : (stage === 'url_set')
-      ? <h1>passing...</h1>
+      ? <h1>Checking your site...</h1>
       : (stage === 'url_check')
       ? <UrlResult />
       : <h1>KD {url} {stage}</h1>
