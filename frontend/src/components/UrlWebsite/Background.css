@@ -1,0 +1,66 @@
+.url-website .login-container .background {
+  width: 768px;
+  height: 768px;
+
+  position: absolute;
+  left: 300px;
+  top: -260px;
+
+}
+
+.url-website .login-container .background .background-content {
+  display: flex;
+  width: 768px;
+  height: 768px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.url-website .login-container .background .background-content .background-line {
+  flex-shrink: 0;
+  position: absolute;
+
+  border-radius: 9999px;
+  border: 1px #EAECF0 solid;
+}
+
+.url-website .login-container .background .background-content .background-line1 {
+  width: 96px;
+  height: 96px;
+}
+
+.url-website .login-container .background .background-content .background-line2 {
+  width: 192px;
+  height: 192px;
+}
+
+.url-website .login-container .background .background-content .background-line3 {
+  width: 288px;
+  height: 288px;
+}
+
+.url-website .login-container .background .background-content .background-line4 {
+  width: 384px;
+  height: 384px;
+}
+
+.url-website .login-container .background .background-content .background-line5 {
+  width: var(--width-sm, 480px);
+  height: var(--width-sm, 480px);
+}
+
+.url-website .login-container .background .background-content .background-line6 {
+  width: 576px;
+  height: 576px;
+}
+
+.url-website .login-container .background .background-content .background-line7 {
+  width: 672px;
+  height: 672px;
+}
+
+.url-website .login-container .background .background-content .background-line8 {
+  width: 768px;
+  height: 768px;
+}

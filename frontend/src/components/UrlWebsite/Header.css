@@ -1,0 +1,58 @@
+.url-website .login-container .container .content .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-3xl, 24px);
+  align-self: stretch;
+}
+
+.url-website .login-container .container .content .header .logomark {
+  display: flex;
+  align-items: flex-start;
+
+  box-shadow: 0px 1.5px 3px 0px rgba(16, 24, 40, 0.06), 0px 1.5px 4.5px 0px rgba(16, 24, 40, 0.10);
+}
+
+.url-website .login-container .container .content .header .logomark .vector {
+  width: 48px;
+  height: 48px;
+
+  background: url('/SunShine.png') lightgray 50% / cover no-repeat;
+}
+
+.url-website .login-container .container .content .header .text-and-supporting-tool {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-lg, 12px);
+  align-self: stretch;
+}
+
+.url-website .login-container .container .content .header .text-and-supporting-tool .text {
+  align-self: stretch;
+
+  color: var(--colors-text-text-primary-900, #101828);
+  text-align: center;
+
+  /* Display sm/Semibold */
+  font-family: Inter;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.375rem;
+  /* 126.667% */
+}
+
+.url-website .login-container .container .content .header .text-and-supporting-tool .supporting-text {
+  align-self: stretch;
+  color: var(--colors-text-text-tertiary-600, #475467);
+  text-align: center;
+
+  /* Text md/Regular */
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  /* 150% */
+}

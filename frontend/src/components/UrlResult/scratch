@@ -1,0 +1,7 @@
+const ResultContent = () => {
+  return (
+    <div className="result-content">
+      <ResultContentSection />
+    </div>
+  )
+}

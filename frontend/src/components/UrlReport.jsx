@@ -15,7 +15,28 @@ const Section = (props) => {
 };
 
 const PanelFooter = () => {
-  <div></div>;
+  return (
+    <div className="PanelFooter">
+      <div className="Content">
+        <div className="Actions">
+          <div className="ButtonCancel">
+            <div className="TextPadding">
+              <span className="Text">
+                Cancel
+              </span>
+            </div>
+          </div>
+          <div className="ButtonDownloadReport">
+            <div className="TextPadding">
+              <div className="Text">
+                Download Report
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 };
 
 const ReportFrame = () => {
@@ -69,35 +90,45 @@ const ReportFrame = () => {
   );
 };
 
+const ReportHeader = () => {
+  return (
+    <div className="ReportHeader">
+      <div className="Content">
+        <div className="Logomark">
+          <div className="Vector">
+          </div>
+        </div>
+        <div className="TextAndSupportingText">
+          <span className="Text">
+            Review Results
+          </span>
+          <span className="SupportingText">
+            Your accessibility scan is complete—here's what we found!
+          </span>
+        </div>
+
+      </div>
+      <div className="ButtonClose">
+        <img src={xclose} alt="x-close" />
+      </div>
+    </div>
+  )
+}
+
 const UrlReport = () => {
   return (
     <div className="UrlReport">
       <div className="Image"></div>
       <div className="SlideOutMenu">
         <div className="Panel">
-          <header>
-            <div className="Content">
-              <div className="Logomark">
-                <div className="Vector"></div>
-              </div>
-              <div className="TextAndSupportingText">
-                <div className="Text">Review Results</div>
-                <div className="SupportingText">
-                  Your accessibility scan is complete—here's what we found!
-                </div>
-              </div>
-            </div>
-            <button>
-              <img src={xclose} className="ButtonClose" alt="Button Close" />
-            </button>
-          </header>
+          <ReportHeader />
           <div className="InputField">
             <div className="InputWithLabel">
               <div className="Input">
                 <div className="InputContext">
                   <div className="InputText">www.websitesample.com</div>
                 </div>
-                <div className="HelpIcon"></div>
+                {/* <div className="HelpIcon"></div> */}
               </div>
             </div>
             <div className="Hint"></div>

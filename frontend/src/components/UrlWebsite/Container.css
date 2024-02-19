@@ -1,0 +1,11 @@
+.url-website .login-container .container {
+  display: flex;
+  max-width: var(--container-max-width-desktop, 1280px);
+  padding: var(--spacing-none, 0px) var(--container-padding-desktop, 32px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-4xl, 32px);
+  align-self: stretch;
+  z-index: 1;
+}

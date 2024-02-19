@@ -11,6 +11,13 @@ export const initialState = {
 const accessibilityReducer = (state, action) => {
   const { type, payload } = action
   switch (type) {
+    case 'ENTER_URL': {
+      return {
+        ...state,
+        ...initialState,
+        stage: 'url_entry',
+      }
+    }
     case 'SET_URL':
       return {
         ...state,

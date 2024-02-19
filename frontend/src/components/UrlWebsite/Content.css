@@ -1,0 +1,7 @@
+.url-website .login-container .container .content {
+  display: flex;
+  max-width: 360px;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-4xl, 32px);
+}
