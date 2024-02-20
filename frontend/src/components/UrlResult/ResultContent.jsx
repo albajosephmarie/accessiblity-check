@@ -46,7 +46,7 @@ const ResultContentFrame = ({ node, number }) => {
   const bgColor = node.any[0].data.bgColor
   const fgColor = node.any[0].data.fgColor
   const cn1 = node.any[0].data.contrastRatio
-  const cn2 = parseFloat(calcAPCA(fgColor,bgColor)).toFixed(1)
+  const cn2 = parseFloat(calcAPCA(fgColor, bgColor)).toFixed(1)
   return (
     <div className="result-content-frame">
       <div className="result-content-avatar-wrap">
@@ -59,11 +59,13 @@ const ResultContentFrame = ({ node, number }) => {
       </div>
       <div className="result-content-card">
         <div className="result-check-tile">
-          <div className="result-check-color">
+          <div className="result-check-color" style={{
+            backgroundColor: `${bgColor}`
+          }}>
             <div className="result-contrast-level">
               <div className="result-contrast-number">
-                <span className="result-contrast-number-text">{cn2}</span>
-                <span className="result-contrast-number-text">{cn1}:1</span>
+                <span className="result-contrast-number-text" style={{color: `${fgColor}`}}>{cn2}</span>
+                <span className="result-contrast-number-text" style={{ color: `${fgColor}`}}>{cn1}:1</span>
 
               </div>
               <div className="result-contrast-score">

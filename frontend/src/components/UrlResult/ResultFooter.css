@@ -68,6 +68,8 @@
 
   /* Shadows/shadow-xs */
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+  cursor: pointer;
 }
 
 .url-result .slide-out-menu .result-panel .result-footer .result-footer-content .result-footer-action .result-footer-download-button .result-footer-download-text {
