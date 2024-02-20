@@ -4,30 +4,38 @@ import useAccessibility from "./AccessibilityContext"
 import { useEffect } from "react"
 
 const App = () => {
-  const { stage, url, checkUrl } = useAccessibility()
+  const { stage, url, success, error, enterUrl, checkUrl } = useAccessibility()
 
-  useEffect(()=> {
-    if (stage === 'url_set') {
-      checkUrl()
+  useEffect(() => {
+    try {
+      if (stage === 'url_set') {
+        checkUrl()
+      } 
+    } catch (error) {
+      console.log('error')
+      enterUrl()
     }
-  }, [stage, checkUrl])
+  }, [stage, checkUrl, enterUrl])
 
-//   return (
-//     <>
-//     <UrlResult />
-//     </>
-//   )
-// }
-
+  //   return (
+  //     <>
+  //     <UrlResult />
+  //     </>
+  //   )
+  // }
+  if (stage === 'url_check' && !success) {
+    enterUrl()
+    return (<div><h1>Error:</h1><p>{error}</p></div>)
+  }
   return (
     <>
       {(stage === 'url_entry')
-      ? <UrlWebsite />
-      : (stage === 'url_set')
-      ? <h1>Checking your site...</h1>
-      : (stage === 'url_check')
-      ? <UrlResult />
-      : <h1>KD {url} {stage}</h1>
+        ? <UrlWebsite />
+        : (stage === 'url_set')
+          ? <h1>Checking your site...</h1>
+          : (stage === 'url_check')
+            ? <UrlResult />
+            : <h1>KD {url} {stage}</h1>
       }
     </>
   )

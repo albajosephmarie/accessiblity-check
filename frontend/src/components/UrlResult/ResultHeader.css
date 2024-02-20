@@ -58,7 +58,7 @@
   width: 32px;
   height: 32px;
 
-  background: url('/public/Logomark.png') lightgray 50% / cover no-repeat;
+  background: url('/Logomark.png') lightgray 50% / cover no-repeat;
 }
 
 .url-result .slide-out-menu .result-panel .result-header .result-button-close {

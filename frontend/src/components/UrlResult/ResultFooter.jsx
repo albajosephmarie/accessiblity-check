@@ -1,3 +1,4 @@
+import useAccessibility from '../../AccessibilityContext'
 import './ResultFooter.css'
 const ResultFooter = () => {
   return (
@@ -13,8 +14,12 @@ const ResultFooter = () => {
 }
 
 const ResultCancelButton = () => {
+  const { enterUrl } = useAccessibility()
+  const handleClick = () => {
+    enterUrl()
+  }
   return (
-    <button className="result-footer-cancel-button">
+    <button className="result-footer-cancel-button" onClick={()=>handleClick()}>
       <span className="result-footer-cancel-text">Cancel</span>
     </button>
   )

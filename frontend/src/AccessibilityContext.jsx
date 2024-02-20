@@ -7,6 +7,13 @@ const AccessibilityContext = createContext(initialState)
 export const AccessibilityProvider = ({ children }) => {
   const [state, dispatch] = useReducer(accessibilityReducer, initialState)
 
+  const enterUrl = () => {
+    dispatch({
+      type: 'ENTER_URL', 
+      payload: {}
+    })
+  }
+
   const setUrl = (url) => {
     dispatch({
       type: 'SET_URL',
@@ -35,7 +42,7 @@ export const AccessibilityProvider = ({ children }) => {
       } else {
         dispatch({
           type: 'CHECK_URL',
-          payload: { statusCode: res.statusCode, success: false, image: null, violations: null, error: 'Failed to check website' }
+          payload: { statusCode: res.statusCode, success: false, image: null, violations: [], error: 'Failed to check website' }
         })
       }
     } catch (error) {
@@ -49,6 +56,7 @@ export const AccessibilityProvider = ({ children }) => {
 
   const value = {
     ...state,
+    enterUrl,
     setUrl,
     checkUrl
   }
